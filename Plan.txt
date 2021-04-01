@@ -1,0 +1,25 @@
+link: https://dev.to/nerdjfpb/15-c-project-ideas-beginner-to-expert-with-tutorial-iio
+Starter from (java, html from 1 april to 1 may), c# depends on future 
+==============================================
+--------------- Easy ------------------------
+1. Number guessing,
+2. Note app,
+3. Telephone diary,
+4. Tic toc toe;
+----------- Intermediate --------------------
+5. Music Player
+6. Drawing app
+7. Digital Clock
+8. Car racing game
+-------------- Advanced ---------------------
+9.  Twitter Bot
+10. Sales management
+11. Library management
+12. Flappy Bird
+-------------- Expert -----------------------
+13. Contact Management
+14. College Management
+15. Candy crush
+16. Tournament Tracker
+==============================================
+Ending
