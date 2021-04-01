@@ -12,13 +12,25 @@ public class Main {
         System.out.println("Taking a number Between 1 to 127.....");
         System.out.println("Number is store......");
 
-        System.out.println("Enter the number you guess: ");
-        numberGuess = scan.nextInt();
 
 
-        if(numberGuess == RealNumber){
-            System.out.println("  ");
+        do {
+            System.out.print("Enter the number you guess ("+Turn+" out 6) done: ");
+            numberGuess = scan.nextInt();
+
+            if (numberGuess == RealNumber) {
+                System.out.println("You Got the number "+RealNumber+"......");
+                System.out.println("Congratulations");
+                break;
+            } else if (numberGuess + 10 >= RealNumber || numberGuess - 10 >= RealNumber)
+                System.out.println("You are to close to.....");
+            else System.out.println("Try Again");
+
+            Turn++;
+        }while(Turn<6);
+
+        if(Turn==6){
+            System.out.println("But Game Over....");
         }
-
     }
 }
