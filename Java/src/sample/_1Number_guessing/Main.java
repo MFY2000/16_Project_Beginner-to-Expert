@@ -1,6 +1,5 @@
-package sample.Number_guessing;
+package sample._1Number_guessing;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {

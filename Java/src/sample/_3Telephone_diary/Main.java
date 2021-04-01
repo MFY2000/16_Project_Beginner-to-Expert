@@ -1,4 +1,4 @@
-package sample.Note_app;
+package sample._3Telephone_diary._2Note_app;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
