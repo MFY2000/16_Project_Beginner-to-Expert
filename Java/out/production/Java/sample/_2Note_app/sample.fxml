@@ -8,9 +8,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" fx:controller="sample._2Note_app.NotePad_Function" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample._2Note_app.NotePad_Function">
 <children>
-    <TextField layoutY="26.0" prefHeight="399.0" prefWidth="554.0" />
+    <TextField fx:id="Input_feild" alignment="TOP_LEFT" layoutY="26.0" prefHeight="399.0" prefWidth="554.0" />
     <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="554.0">
         <menus>
             <Menu mnemonicParsing="false" text="File">
@@ -32,8 +32,8 @@
     </MenuBar>
     <ButtonBar layoutY="425.0" prefHeight="48.0" prefWidth="548.0">
         <buttons>
-            <Button mnemonicParsing="false" text="Clear" />
-            <Button minWidth="58.0" mnemonicParsing="false" prefHeight="25.0" text="Save" />
+            <Button mnemonicParsing="false" onAction="#clear" text="Clear" />
+            <Button minWidth="58.0" mnemonicParsing="false" onAction="#Save_File" prefHeight="25.0" text="Save" />
         </buttons>
     </ButtonBar>
 </children>
