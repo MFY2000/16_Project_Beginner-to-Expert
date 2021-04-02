@@ -4,4 +4,6 @@ module Java {
     requires javafx.controls;
 
     opens sample;
+    opens sample._2Note_app;
+    opens sample._3Telephone_diary;
 }
