@@ -1,4 +1,59 @@
-<?import javafx.scene.layout.GridPane?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample._3Telephone_diary.Controller">
+   <children>
+      <TreeTableView layoutY="157.0" prefHeight="385.0" prefWidth="600.0">
+        <columns>
+          <TreeTableColumn fx:id="NO" prefWidth="43.0" text="S.NO" />
+          <TreeTableColumn fx:id="Full_Name" prefWidth="205.0" text="Full Name" />
+            <TreeTableColumn fx:id="TypeOFData" prefWidth="205.0" text="Type " />
+            <TreeTableColumn fx:id="Phone_Number" prefWidth="146.0" text="Phone_Number" />
+        </columns>
+      </TreeTableView>
+      <TextField fx:id="F_name" layoutX="128.0" layoutY="23.0" promptText="F_name" />
+      <TextField fx:id="L_name" layoutX="402.0" layoutY="23.0" promptText="L_name" />
+      <TextField fx:id="Cell_Number" layoutX="129.0" layoutY="115.0" promptText="Cell_Number" />
+      <Label contentDisplay="CENTER" layoutX="36.0" layoutY="19.0" prefHeight="25.0" prefWidth="68.0" text="First Name" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="12.0" />
+         </font></Label>
+      <Label contentDisplay="CENTER" layoutX="37.0" layoutY="115.0" prefHeight="25.0" prefWidth="68.0" text="Cell Number" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="12.0" />
+         </font></Label>
+      <Label contentDisplay="CENTER" layoutX="36.0" layoutY="72.0" prefHeight="25.0" prefWidth="68.0" text="Type" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="12.0" />
+         </font></Label>
+      <Label contentDisplay="CENTER" layoutX="318.0" layoutY="23.0" prefHeight="25.0" prefWidth="68.0" text="Last Name" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Type" layoutX="128.0" layoutY="72.0" prefWidth="150.0" promptText="Type of Number" />
+      <ButtonBar layoutX="293.0" layoutY="101.0" prefHeight="47.0" prefWidth="301.0">
+        <buttons>
+          <Button mnemonicParsing="false" prefHeight="28.0" style="-fx-background-color: GREEN;" text="Add" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button minWidth="28.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="113.0" style="-fx-background-color: RED;" text="Delete" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
