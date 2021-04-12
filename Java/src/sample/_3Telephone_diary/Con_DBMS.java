@@ -31,38 +31,3 @@ public class Con_DBMS {
     }
 }
 
-class JdbcSQLServerConnection {
-    public static void main(String[] args) {
-
-
-        Connection conn = null;
-
-        try {
-//            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String dbURL = "jdbc:mysql://localhost/TODO_list?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-            String user = "MFY";
-            String pass = "";
-            conn = DriverManager.getConnection(dbURL, user, pass);
-            if (conn != null) {
-                DatabaseMetaData dm = (DatabaseMetaData) conn.getMetaData();
-                System.out.println("Driver name: " + dm.getDriverName());
-                System.out.println("Driver version: " + dm.getDriverVersion());
-                System.out.println("Product name: " + dm.getDatabaseProductName());
-                System.out.println("Product version: " + dm.getDatabaseProductVersion());
-            }
-
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
-        }
-    }
-}
