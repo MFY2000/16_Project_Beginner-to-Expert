@@ -3,7 +3,7 @@ module Java {
     requires javafx.base;
     requires javafx.controls;
 //    requires mysql.connector;
-//    requires mssql.jdbc;
+    requires mssql.jdbc;
 
     requires java.sql;
 
